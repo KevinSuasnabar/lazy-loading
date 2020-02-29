@@ -4,7 +4,7 @@
       <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
         <mat-tab label="Sign In">
             <mat-card-content>
-              <form action="">
+              <form #loginForm="ngForm" (ngSubmit)="onLoginSubmit(loginForm)">
                 <mat-form-field>
                   <input
                     matInput
@@ -54,7 +54,7 @@
         </mat-tab>
         <mat-tab label="Sign Up">
           <mat-card-content>
-            <form action="">
+            <form  #registerForm="ngForm" (ngSubmit)="onRegisterSubmit(registerForm)">
               <mat-form-field>
                 <input
                   matInput

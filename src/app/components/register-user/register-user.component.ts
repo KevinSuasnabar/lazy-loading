@@ -14,4 +14,20 @@ export class RegisterUserComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onLoginSubmit(loginForm){
+    if(loginForm.valid){
+      console.log(loginForm.value);
+      //podemos enviar al servicio
+      //this.service.envierDAtos(loginForm).subscribe(
+      //  response=>console.log(response)
+       // )
+    }
+  }
+
+  onRegisterSubmit(registerForm){
+    if(registerForm.valid){
+      console.log(registerForm.value);
+      //podemos enviar al servicio
+    }
+  }
 }

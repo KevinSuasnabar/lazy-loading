@@ -4,6 +4,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { ServicesComponent } from '../services.component';
 import { HormigasComponent } from './hormigas/hormigas.component';
 import { PersonasComponent } from './personas.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 const routes:Routes=[
   {
@@ -24,11 +25,15 @@ const routes:Routes=[
 @NgModule({
   declarations: [
     PersonasComponent,
-    HormigasComponent
+    HormigasComponent,
+    ContactoComponent
+    
+    
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
-  ]
+  ],
+
 })
 export class PersonasModule { }
